@@ -53,7 +53,6 @@ function saveTasks() {
   });
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
-
 // Load saved tasks on page load
 function loadTasks() {
   const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
